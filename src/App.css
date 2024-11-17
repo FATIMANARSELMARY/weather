@@ -1,0 +1,178 @@
+
+.App {
+  text-align: center;
+}
+/* body {
+  background-image: url('./components/bg.png');
+  
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+} */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: grid;
+  place-items: center; /* Centers content both horizontally and vertically */
+  background-image: url('./components/bg.png'); /* Optional: Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+
+
+
+.weathercontainer {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5cdb95, #05386b);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.weathercontainer input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weathercontainer input:focus {
+  outline: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weathercontainer button {
+  padding: 10px 20px;
+  /* background-color: #379683; */
+  border:5px solid black;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.weathercontainer button:hover {
+  background-color: #28734a;
+  transform: scale(1.05);
+}
+
+.weathercontainer button:active {
+  background-color: #1e5631;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+
+.app-container {
+  height: 100vh; /* Full height of the viewport */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.weathercontainer {
+  text-align: center;
+  padding: 20px;
+  /* background: rgba(0, 0, 0, 0.7);  */
+  border-radius: 8px;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  margin: 10px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #75d229;
+  border:15px solid black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  padding: 10px;
+  /* background: linear-gradient(135deg, #5cdb95, #05386b);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.suggestions-container {
+  position: relative;
+  width: 100%;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scroll */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 8px; /* Ensures it appears just below the input */
+}
+
+.suggestions-list li {
+  color:black;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
